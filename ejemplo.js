@@ -70,3 +70,41 @@ console.log("Ha pasado " + tiempoEsperado/1000 + " Segundos");
 
 
 ////////////////////////////////
+// Opcion 1
+// try {
+//   var a = 100 / 0;
+//
+//   if (a === Infinity) {
+//       throw new Error("Division por cero");
+//   }
+//
+//
+// }
+//
+// catch (e) {
+//   console.log("Este fue el error: " + e.message );
+// }
+// //Siempre se ejecuta, independientemente de si pasa o no por el catch
+// finally {
+//   console.log("Finamente...")
+//
+//
+// }
+
+////////////////////////////////
+// Opcion 2: Se pasa como objeto de excepcion algo a medida
+
+try {
+  throw {
+    textError: "Mensaje del error",
+    typeError: "Tipo del error",
+    codigoError: "Código del error"
+  }
+} catch (e) {
+  console.log(e.textError);
+  console.log(e.typeError);
+  console.log(e.codigoError);
+
+} finally {
+
+}
