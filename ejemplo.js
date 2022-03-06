@@ -1,4 +1,3 @@
-
 /* CURSO DE FECHAS
 var fechaInicio = new Date();
 
@@ -93,18 +92,41 @@ console.log("Ha pasado " + tiempoEsperado/1000 + " Segundos");
 
 ////////////////////////////////
 // Opcion 2: Se pasa como objeto de excepcion algo a medida
-
-try {
-  throw {
-    textError: "Mensaje del error",
-    typeError: "Tipo del error",
-    codigoError: "Código del error"
-  }
-} catch (e) {
-  console.log(e.textError);
-  console.log(e.typeError);
-  console.log(e.codigoError);
-
-} finally {
-
-}
+//
+// try {
+//   throw {
+//     textError: "Mensaje del error",
+//     typeError: "Tipo del error",
+//     codigoError: "Código del error"
+//   }
+// } catch (e) {
+//   console.log(e.textError);
+//   console.log(e.typeError);
+//   console.log(e.codigoError);
+//
+// } finally {
+//
+// }
+// 
+// /// Condiciones flujo
+// var nota = 59;
+//
+// // if (nota > 50 ) {
+// //   console.log("Aprobado");
+// // } else {
+// //   console.log("Suspenso");
+// // }
+//
+//
+// switch (true) {
+// 	case nota >= 50 && nota < 60:
+// 		console.log("Aprobado");
+// 		break;
+// 	case (nota >= 60) && (nota < 70):
+// 		console.log("Bien");
+// 		break;
+// 	case (nota >= 70) && (nota < 90):
+// 		console.log("Notable");
+// 		break;
+//
+// }
